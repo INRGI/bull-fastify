@@ -13,4 +13,4 @@ export class MathController{
         const job = await this.mathBinaryQueue.add(MATH_BINARY_OPS.SUM, dto);
         return job.id || '';
     };
-}
+};

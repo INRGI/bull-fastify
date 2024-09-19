@@ -8,7 +8,7 @@ import { MathArrayChildProcessor } from "./processors/math-array-child.processor
 import { MathArrayController } from "./controllers/math-array.controller";
 import { MathArrayMergeProcessor } from "./processors/math-array-merge.process";
 import { ArrayFlowService } from "./services/array-flow.service";
-import { MathUnaryOperationProcessor } from "./processors/math-unary-operation-pocessor.service";
+import { MathUnaryOperationProcessor } from "./processors/math-unary-operation-processor.service";
 
 @Module({
     imports: [QueueModule.register({

@@ -9,10 +9,10 @@ const PARTITION_SIZE = 4;
 
 @Injectable()
 export class ArrayFlowService{
-    constructor(@InjectMathArrayProducer() private mathFlowPriducer: FlowProducer){};
+    constructor(@InjectMathArrayProducer() private mathFlowProducer: FlowProducer){};
 
     async createFlow(dto: ArrayOperationDto, jobName: MATH_ARRAY_OPS): Promise<string>{
-        const flow = await this.mathFlowPriducer.add({
+        const flow = await this.mathFlowProducer.add({
             name: jobName,
             queueName: MATH_ARRAY_MERGE,
             children: this.createChildrenJobs(dto, jobName),
