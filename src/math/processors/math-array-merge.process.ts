@@ -18,7 +18,7 @@ export class MathArrayMergeProcessor extends WorkerHostProcessor {
       case MATH_ARRAY_OPS.MIN:
         return Math.min(...results);
       case MATH_ARRAY_OPS.MAX:
-        return Math.min(...results);
+        return Math.max(...results);
     case MATH_ARRAY_OPS.FILTER_ODD:
     case MATH_ARRAY_OPS.FILTER_EVEN:
         return  (results as number[][]).flat();
