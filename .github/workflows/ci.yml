@@ -29,5 +29,5 @@ jobs:
 
       - uses: nrwl/nx-set-shas@v4
 
-      - run: nx test
+      - run: npx nx test
       
