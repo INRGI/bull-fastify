@@ -56,3 +56,7 @@ pids
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 */gcloud-postmaster
 */node_modules
+
+
+.nx/cache
+.nx/workspace-data
