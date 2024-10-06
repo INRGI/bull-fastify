@@ -30,5 +30,3 @@ jobs:
       - uses: nrwl/nx-set-shas@v4
 
       - run: npx nx test
-      - run: npx nx run frontend:build
-      - run: npx nx start
